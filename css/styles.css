@@ -341,7 +341,8 @@ p {
 }
 
 .filter-list button {
-  background-color: var(--filter-btn-bg-color)
+  color: var(--primary-text-color);
+  background-color:var(--filter-btn-bg-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
