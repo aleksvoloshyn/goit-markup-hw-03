@@ -184,6 +184,7 @@ p {
   padding-bottom: 10px;
   padding-left:32px;
   padding-right: 32px;
+  border-radius: 4px;
 }
 
 /* advantages */
@@ -256,6 +257,10 @@ p {
   display: none;
 }
 
+ul.filter-list{
+  padding-bottom:16px ;
+}
+
 .filter-list button {
   background-color: var(--filter-btn-bg-color);
 
@@ -263,6 +268,14 @@ p {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
+  
+  border-radius: 4px;
+  min-width: 73px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  
 }
 
 .filter-list button:hover,
@@ -270,6 +283,12 @@ p {
   color: var(--whitecolor);
 }
 
+.sitelist-titles{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
 
 .portfolio h2 {
 
