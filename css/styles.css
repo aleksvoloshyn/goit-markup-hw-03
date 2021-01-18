@@ -91,12 +91,13 @@ p {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  /* outline: 1px solid firebrick; */
 }
 
 .section {
   /* margin-bottom: 94px; */
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
 }
 
 .advantages>h2 {
@@ -159,9 +160,7 @@ p {
 .contacts .item+.item {
   margin-left: 50px;
 }
-
 /* всем у кого сверху по-соседству класс item */
-
 
 /* site navigation */
 .site-nav,
@@ -224,11 +223,13 @@ p {
   border-radius: 4px;
 }
 
-/* .container {
-  outline: 1px solid green;
-} */
-
 /* advantages */
+.advantages,
+.what-we-do,
+.our-team{
+  margin-top: 94px;
+}
+
 .advantages-list {
   display: flex;
 }
@@ -246,20 +247,40 @@ p {
 }
 
 /* what we do section*/
-.what-we-do {
-  padding-top: 0;
+.what-we-do .list{
+  display: flex;
+  justify-content: center;
+}
+
+.what-we-do .item:not(:last-child){
+  margin-right: 30px;
+}
+
+.what-we-do-title,
+.our-team-title{
+  margin-bottom: 50px;
 }
 
 /* our team */
 .our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--third-bg-color);
+}
+
+.our-team-list{
+  display: flex;
+}
+
+.our-team .item:not(:last-child){
+  margin-right: 30px;
 }
 
 .our-team img {
   margin-bottom: 30px;
 }
 
-.our-team-list h3 {
+.our-team-list .title{
   font-size: 16px;
   text-transform: unset;
   margin-bottom: 10px;
@@ -270,7 +291,6 @@ p {
   font-weight: 500;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
 }
 
 /* footer */
