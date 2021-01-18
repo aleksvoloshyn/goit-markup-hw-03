@@ -94,22 +94,11 @@ p {
   /* outline: 1px solid firebrick; */
 }
 
-.section {
-  /* margin-bottom: 94px; */
-  /* padding-top: 94px;
-  padding-bottom: 94px; */
-}
-
 .advantages>h2 {
   display: none;
 }
 
 /* header */
-
-/* .page-header {
-  outline: 1px solid green;
-} */
-
 .list a:hover,
 .list a:focus,
 .footer address a:hover,
@@ -160,6 +149,7 @@ p {
 .contacts .item+.item {
   margin-left: 50px;
 }
+
 /* всем у кого сверху по-соседству класс item */
 
 /* site navigation */
@@ -203,8 +193,19 @@ p {
 }
 
 .hero-button {
+  min-width: 200px;
+  border: 0;
+  border-radius: 4px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  
+
   color: var(--whitecolor);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-weight: bold;
   font-size: 16px;
@@ -212,21 +213,13 @@ p {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-
-  min-width: 200px;
-  height: 50px;
-
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
-  border-radius: 4px;
 }
 
 /* advantages */
 .advantages,
 .what-we-do,
-.our-team{
+.our-team,
+.portfolio {
   margin-top: 94px;
 }
 
@@ -247,17 +240,17 @@ p {
 }
 
 /* what we do section*/
-.what-we-do .list{
+.what-we-do .list {
   display: flex;
   justify-content: center;
 }
 
-.what-we-do .item:not(:last-child){
+.what-we-do .item:not(:last-child) {
   margin-right: 30px;
 }
 
 .what-we-do-title,
-.our-team-title{
+.our-team-title {
   margin-bottom: 50px;
 }
 
@@ -268,11 +261,21 @@ p {
   background-color: var(--third-bg-color);
 }
 
-.our-team-list{
+.our-team-list {
   display: flex;
 }
 
-.our-team .item:not(:last-child){
+.our-team-list .item {
+  padding-bottom: 30px;
+
+  background-color: var(--whitecolor);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team .item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -280,7 +283,7 @@ p {
   margin-bottom: 30px;
 }
 
-.our-team-list .title{
+.our-team-list .title {
   font-size: 16px;
   text-transform: unset;
   margin-bottom: 10px;
@@ -313,12 +316,18 @@ p {
 .portfolio button:hover,
 .portfolio button:focus {
   background-color: var(--accent-color);
+  color: var(--whitecolor);
+}
+
+.portfolio {
+  margin-bottom: 94px;
 }
 
 .portfolio h1 {
   display: none;
 }
 
+/* filter buttons */
 .filter-list {
   margin-bottom: 34px;
 
@@ -327,13 +336,12 @@ p {
   padding-bottom: 16px;
 }
 
-.filter-list .item:not(last-child){
-  margin-left: 6px;
+.filter-list .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-list button {
-  background-color: var(--filter-btn-bg-color);
-
+  background-color: var(--filter-btn-bg-color)
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -348,8 +356,8 @@ p {
   padding-bottom: 6px;
 }
 
-.filter-list button:hover,
-.filter-list button:focus {
+.filter-list li:first-child button{
+  background-color: var(--accent-color);
   color: var(--whitecolor);
 }
 
@@ -361,14 +369,11 @@ p {
   text-align: left;
 }
 
-/* .portfolio .item {
-  outline: 1px solid gold;
-} */
-
 .portfolio-items {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
+  margin-bottom: 0;
 }
 
 /* задаем для детей суммируемый марджин и у родителя минусовой */
