@@ -225,14 +225,26 @@ p {
   border-radius: 4px;
 }
 
-/* advantages */
+.container{
+  outline: 1px solid green;
+}
 
-.advantages li {
+/* advantages */
+.advantages-list{
+  display: flex;
+}
+
+.advantages .item {
   width: 270px;
+  outline: 1px dotted red;
 }
 
 .advantages-title {
   margin-bottom: 10px;
+}
+
+.advantages .item+.item {
+  margin-left: 30px;
 }
 
 /* what we do section*/
