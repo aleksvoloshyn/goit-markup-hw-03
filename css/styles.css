@@ -9,7 +9,7 @@
 
   --primary-bg-color: #ffffff;
   --second-bg-color: #2f303a;
-  --third-bg-color:#F5F4FA;
+  --third-bg-color: #F5F4FA;
 
   --filter-btn-bg-color: #F5F4FA;
 
@@ -116,13 +116,52 @@ p {
   color: var(--accent-color);
 }
 
+/* site-nav */
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav-pages {
+  display: flex;
+}
+
+.site-nav-pages .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* .site-nav-pages .item + .item{
+  margin-left: 50px;
+} */
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 /* site logo */
 .site-nav-logo {
+  display: block;
+  margin-right: 91px;
+
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
 }
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts .item+.item {
+  margin-left: 50px;
+}
+
+/* всем у кого сверху по-соседству класс item */
+
 
 /* site navigation */
 .site-nav,
@@ -144,7 +183,7 @@ p {
   padding-bottom: 200px;
 }
 
-.hero-content{
+.hero-content {
   width: 696px;
   margin: 0 auto;
 }
@@ -152,6 +191,9 @@ p {
 
 /* h1 hero */
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   color: var(--hero-title);
 
   font-weight: 900;
@@ -160,10 +202,6 @@ p {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  
-  margin-top: 0;
-  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -182,32 +220,32 @@ p {
 
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left:32px;
+  padding-left: 32px;
   padding-right: 32px;
   border-radius: 4px;
 }
 
 /* advantages */
 
-.advantages li{
+.advantages li {
   width: 270px;
 }
 
-.advantages-title{
-  margin-bottom:10px ;
+.advantages-title {
+  margin-bottom: 10px;
 }
 
 /* what we do section*/
-.what-we-do{
+.what-we-do {
   padding-top: 0;
 }
 
 /* our team */
-.our-team{
-  background-color:var(--third-bg-color);
+.our-team {
+  background-color: var(--third-bg-color);
 }
 
-.our-team img{
+.our-team img {
   margin-bottom: 30px;
 }
 
@@ -242,11 +280,6 @@ p {
   color: var(--address-color)
 }
 
-.site-nav-logo{
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
 /* portfolio styles */
 .portfolio button:hover,
 .portfolio button:focus {
@@ -257,8 +290,8 @@ p {
   display: none;
 }
 
-ul.filter-list{
-  padding-bottom:16px ;
+ul.filter-list {
+  padding-bottom: 16px;
 }
 
 .filter-list button {
@@ -268,14 +301,14 @@ ul.filter-list{
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
-  
+
   border-radius: 4px;
   min-width: 73px;
   padding-left: 22px;
   padding-right: 22px;
   padding-top: 6px;
   padding-bottom: 6px;
-  
+
 }
 
 .filter-list button:hover,
@@ -283,11 +316,11 @@ ul.filter-list{
   color: var(--whitecolor);
 }
 
-.sitelist-titles{
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
+.sitelist-titles {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .portfolio h2 {
