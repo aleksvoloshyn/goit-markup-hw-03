@@ -188,7 +188,6 @@ p {
   margin: 0 auto;
 }
 
-
 /* h1 hero */
 .hero-title {
   margin-top: 0;
@@ -225,18 +224,17 @@ p {
   border-radius: 4px;
 }
 
-.container{
+/* .container {
   outline: 1px solid green;
-}
+} */
 
 /* advantages */
-.advantages-list{
+.advantages-list {
   display: flex;
 }
 
 .advantages .item {
   width: 270px;
-  outline: 1px dotted red;
 }
 
 .advantages-title {
@@ -280,7 +278,6 @@ p {
   background-color: var(--second-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
-
 }
 
 .footer,
@@ -302,8 +299,16 @@ p {
   display: none;
 }
 
-ul.filter-list {
+.filter-list {
+  margin-bottom: 34px;
+
+  display: flex;
+  justify-content: center;
   padding-bottom: 16px;
+}
+
+.filter-list .item:not(last-child){
+  margin-left: 6px;
 }
 
 .filter-list button {
@@ -314,13 +319,13 @@ ul.filter-list {
   line-height: 1.63;
   text-align: center;
 
+  border: 0;
   border-radius: 4px;
   min-width: 73px;
   padding-left: 22px;
   padding-right: 22px;
   padding-top: 6px;
   padding-bottom: 6px;
-
 }
 
 .filter-list button:hover,
@@ -328,20 +333,41 @@ ul.filter-list {
   color: var(--whitecolor);
 }
 
-.sitelist-titles {
-  padding-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
 .portfolio h2 {
-
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: left;
+}
+
+/* .portfolio .item {
+  outline: 1px solid gold;
+} */
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+/* задаем для детей суммируемый марджин и у родителя минусовой */
+.portfolio-items .item {
+  width: 370px;
+  margin: 15px;
+  /* width: calc((100%-60px)/3); */
+  /* margin-right: 30px;
+  margin-bottom: 30px; */
+}
+
+/* у каждого 3го правый марджин 0 */
+.portfolio-items .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* у последних 3х элементов */
+.portfolio-items .item:nth-last-child(-n+3) {
+  margin-bottom: 0;
 }
 
 .portfolio p {
