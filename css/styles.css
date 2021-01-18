@@ -149,7 +149,6 @@ p {
 .contacts .item+.item {
   margin-left: 50px;
 }
-
 /* всем у кого сверху по-соседству класс item */
 
 /* site navigation */
@@ -159,11 +158,6 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
-/* main */
-/* main {
-  outline: 1px solid indianred;
-} */
 
 /* hero */
 .hero {
@@ -289,7 +283,7 @@ p {
   margin-bottom: 10px;
 }
 
-.our-team-list p {
+.our-team-description {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
@@ -362,7 +356,7 @@ p {
   color: var(--whitecolor);
 }
 
-.portfolio h2 {
+.portfolio-items .title {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -396,7 +390,7 @@ p {
   margin-bottom: 0;
 }
 
-.portfolio p {
+.portfolio-description{
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.88;
