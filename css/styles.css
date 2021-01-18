@@ -77,7 +77,6 @@ h3 {
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
-  outline: 1px solid red;
 }
 
 h2,
@@ -87,14 +86,17 @@ p {
   margin-bottom: 0;
 }
 
-
 .container {
   margin: 0 auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
 
-  outline: 1px solid hotpink;
+.section {
+  /* margin-bottom: 94px; */
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantages>h2 {
@@ -103,9 +105,9 @@ p {
 
 /* header */
 
-.page-header {
+/* .page-header {
   outline: 1px solid green;
-}
+} */
 
 .list a:hover,
 .list a:focus,
@@ -131,9 +133,9 @@ p {
 }
 
 /* main */
-main {
+/* main {
   outline: 1px solid indianred;
-}
+} */
 
 /* hero */
 .hero {
@@ -175,17 +177,43 @@ main {
   text-align: center;
   letter-spacing: 0.06em;
 
-  width: 200px;
+  min-width: 200px;
   height: 50px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left:32px;
+  padding-right: 32px;
 }
 
 /* advantages */
-.advantages p {}
+
+.advantages li{
+  width: 270px;
+}
+
+.advantages-title{
+  margin-bottom:10px ;
+}
+
+/* what we do section*/
+.what-we-do{
+  padding-top: 0;
+}
 
 /* our team */
-
 .our-team{
   background-color:var(--third-bg-color);
+}
+
+.our-team img{
+  margin-bottom: 30px;
+}
+
+.our-team-list h3 {
+  font-size: 16px;
+  text-transform: unset;
+  margin-bottom: 10px;
 }
 
 .our-team-list p {
@@ -193,16 +221,15 @@ main {
   font-weight: 500;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-
-.our-team-list h3 {
-  font-size: 16px;
-  text-transform: unset;
+  margin-bottom: 30px;
 }
 
 /* footer */
 .footer {
   background-color: var(--second-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
 }
 
 .footer,
@@ -212,6 +239,11 @@ main {
 
 .footer-address a {
   color: var(--address-color)
+}
+
+.site-nav-logo{
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 /* portfolio styles */
