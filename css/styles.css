@@ -199,7 +199,6 @@ p {
   padding-left: 32px;
   padding-right: 32px;
   
-
   color: var(--whitecolor);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -274,7 +273,6 @@ p {
 .our-team .item:not(:last-child) {
   margin-right: 30px;
 }
-
 
 .our-team-list .title {
   font-size: 16px;
