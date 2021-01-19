@@ -380,7 +380,7 @@ p {
   flex-wrap: wrap;
   margin: -15px;
  
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /* задаем для детей суммируемый марджин и у родителя минусовой */
@@ -403,7 +403,15 @@ p {
   margin-bottom: 0;
 }
 
+.portfolio-text-block{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .portfolio-description{
+  
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.88;
