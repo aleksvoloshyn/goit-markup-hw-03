@@ -27,8 +27,14 @@
 
 /* сброс декораций cсылок */
 a {
+  display: block;
   text-decoration: none;
   color: var(--primary-text-color);
+}
+
+img{
+  display: block;
+  /* outline: 1px solid red; */
 }
 
 .current {
@@ -370,18 +376,19 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
- 
-  /* outline: 1px solid red; */
 }
 
 /* задаем для детей суммируемый марджин и у родителя минусовой */
 .portfolio-items .item {
   width: 370px;
   margin: 15px;
+
   border: 1px solid var(--border-color-portfolio);
+
   /* width: calc((100%-60px)/3); */
   /* margin-right: 30px;
   margin-bottom: 30px; */
+  /* outline: 1px solid green; */
 }
 
 /* у каждого 3го правый марджин 0 */
