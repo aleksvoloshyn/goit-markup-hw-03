@@ -378,7 +378,9 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  margin-bottom: 0;
+ 
+
+  outline: 1px solid red;
 }
 
 /* задаем для детей суммируемый марджин и у родителя минусовой */
