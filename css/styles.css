@@ -320,10 +320,6 @@ p {
   color: var(--whitecolor);
 }
 
-.portfolio {
-  margin-bottom: 94px;
-}
-
 .portfolio h1 {
   display: none;
 }
