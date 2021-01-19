@@ -333,11 +333,10 @@ p {
 
 /* filter buttons */
 .filter-list {
-  margin-bottom: 34px;
-
   display: flex;
   justify-content: center;
-  padding-bottom: 16px;
+  margin-bottom: 50px;
+  
 }
 
 .filter-list .item:not(:last-child) {
